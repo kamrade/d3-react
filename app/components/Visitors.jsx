@@ -19,8 +19,8 @@ var margin = {
 	left: 50
 };
 
-var width = 800;
-var height = 300;
+var width = 1600;
+var height = 400;
 
 var Visitors = React.createClass({
 	render: function() {

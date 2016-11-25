@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var d3 = require('d3');
 var Dots = require('Dots');
 var Tooltip = require('Tooltip');
@@ -14,6 +15,35 @@ var LineChart = React.createClass({
 		width: React.PropTypes.number,
 		height: React.PropTypes.number,
 		chartId: React.PropTypes.string
+	},
+	componentWillMount: function() {
+		var _self = this;
+		$(window).on('resize', function(e) {
+			_self.updateSize();
+		});
+		this.setState({
+			width: this.props.width
+		});
+	},
+	componentDidMount: function() {
+		this.updateSize();
+	},
+	componentWillUnmount: function() {
+		$(window).off('resize');
+	},
+	updateSize: function() {
+		var node = ReactDOM.findDOMNode(this);
+		var parentWidth = $(node).width();
+
+		if(parentWidth< this.props.width) {
+			this.setState({
+				width: parentWidth - 20
+			});
+		} else {
+			this.setState({
+				width: this.props.width
+			});
+		}
 	},
 	getDefaultProps: function() {
 		return {
