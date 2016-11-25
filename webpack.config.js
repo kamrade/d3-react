@@ -38,11 +38,12 @@ module.exports = {
 			Axis: 'app/components/LineChart/Axis.jsx',
 			Grid: 'app/components/LineChart/Grid.jsx',
 			Tooltip: 'app/components/LineChart/Tooltip.jsx',
+			Nav: 'app/components/Nav.jsx',
+			About: 'app/components/About.jsx',
 
 			applicationStyles: 'app/styles/app.scss',
 			normalizeCss: 'app/lib/normalize-css/normalize.css',
 			LineChartStyles: 'app/styles/modules/line-chart.sass'
-
 		},
 		extensions: ['.js', '', '.jsx']
 	},
