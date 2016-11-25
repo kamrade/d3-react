@@ -37,6 +37,7 @@ module.exports = {
 			AxisAndGrid: 'app/components/LineChart/AxisAndGrid.jsx',
 			Axis: 'app/components/LineChart/Axis.jsx',
 			Grid: 'app/components/LineChart/Grid.jsx',
+			Tooltip: 'app/components/LineChart/Tooltip.jsx',
 
 			applicationStyles: 'app/styles/app.scss',
 			normalizeCss: 'app/lib/normalize-css/normalize.css',

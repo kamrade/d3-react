@@ -7,11 +7,13 @@ var Dots = React.createClass({
 		x: React.PropTypes.func,
 		y: React.PropTypes.func
 	},
-	onMouseEnter: function(e) {
+	onMouseOver: function(e) {
 		e.target.style.r = 12;
+		this.props.showToolTip(e);
 	},
 	onMouseLeave: function(e) {
 		e.target.style.r = 7;
+		this.props.hideToolTip(e);
 	},
 	render: function() {
 		var _self = this;
@@ -30,15 +32,17 @@ var Dots = React.createClass({
 					stroke="#3f5175"
 					strokeWidth="5px"
 					key={i}
-					onMouseEnter={_self.onMouseEnter}
+					onMouseOver={_self.onMouseOver}
 					onMouseLeave={_self.onMouseLeave}
+					data-key={d3.timeFormat('%b %e')(d.date)}
+					data-value={d.count}
 				>
 
 				</circle>
 			);
 		})
 		return (
-			<g>
+			<g className="dots-group">
 				{circles}
 			</g>
 		);

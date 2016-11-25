@@ -31,7 +31,7 @@ var AxisAndGrid = React.createClass({
 			.tickFormat("");
 
 		return (
-			<g>
+			<g className="axis-and-grid">
 				<Axis
 					axis={xAxis}
 					h={h}
