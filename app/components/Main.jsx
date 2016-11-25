@@ -5,7 +5,8 @@ var Main = (props) => {
 		<div>
 			<div>
 				<div>
-					<p className="message-text">Main.jsx rendered</p>
+					<h1 className="message-text">React vs D3 Trainings</h1>
+					<h3>It can be filter here</h3>
 					{props.children}
 				</div>
 			</div>

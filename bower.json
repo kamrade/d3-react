@@ -19,5 +19,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "normalize-css": "^5.0.0"
+  }
 }

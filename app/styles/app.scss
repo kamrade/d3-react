@@ -1,1 +1,9 @@
-@import './modules/styles.sass'
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.message-text {
+	color: skyblue;
+}

@@ -30,7 +30,18 @@ module.exports = {
 		root: __dirname,
 		alias: {
 			Main: 'app/components/Main.jsx',
-			applicationStyles: 'app/styles/app.scss'
+			Visitors: 'app/components/Visitors.jsx',
+			LineChart: 'app/components/LineChart.jsx',
+
+			Dots: 'app/components/LineChart/Dots.jsx',
+			AxisAndGrid: 'app/components/LineChart/AxisAndGrid.jsx',
+			Axis: 'app/components/LineChart/Axis.jsx',
+			Grid: 'app/components/LineChart/Grid.jsx',
+
+			applicationStyles: 'app/styles/app.scss',
+			normalizeCss: 'app/lib/normalize-css/normalize.css',
+			LineChartStyles: 'app/styles/modules/line-chart.sass'
+
 		},
 		extensions: ['.js', '', '.jsx']
 	},
