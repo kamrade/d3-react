@@ -32,7 +32,7 @@ var ToolTip = React.createClass({
 		}
 
 		return (
-			<g transform={transform}>
+			<g className="tooltip-group" transform={transform}>
 				<rect className="shadow" is width={width} height={height} rx='5' ry='5' visibility={visibility}
 					fill='#6391da' opacity='.9'  />
 				<polygon className="shadow" is points='10,0  30,0 20,10' transform={transformArrow}
