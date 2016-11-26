@@ -17,10 +17,13 @@ var Dots = React.createClass({
 	},
 	render: function() {
 		var _self = this;
+
 		// remove last & first point
-		var data = this.props.data;
-		// var data = this.props.data.splice(1);
-		// data.pop();
+		var dataIn = this.props.data;
+		var data = $.extend([], dataIn);
+		var data = data.splice(1);
+		data.pop();
+
 		var circles = data.map(function(d, i) {
 			return (
 				<circle

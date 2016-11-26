@@ -23,7 +23,6 @@ var data1 = [
 	{day: '02-18-2016', count: 250}
 ];
 
-
 var margin = {
 	top: 5,
 	right: 50,
@@ -40,7 +39,8 @@ var Visitors = React.createClass({
 			<div className="visitors">
 				<h3>Visitors to site</h3>
 				<div className="line-chart row">
-						<div className="col-sm-6">
+					<div className="col-sm-6">
+						<div className="graph">
 							<LineChart
 								data={data}
 								margin={margin}
@@ -48,7 +48,9 @@ var Visitors = React.createClass({
 								height={height}
 							/>
 						</div>
-						<div className="col-sm-6">
+					</div>
+					<div className="col-sm-6">
+						<div className="graph">
 							<LineChart
 								data={data1}
 								margin={margin}
@@ -56,6 +58,7 @@ var Visitors = React.createClass({
 								height={height}
 							/>
 						</div>
+					</div>
 				</div>
 			</div>
 		);
