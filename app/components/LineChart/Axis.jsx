@@ -16,13 +16,14 @@ var Axis = React.createClass({
 	},
 	renderAxis: function() {
 		var node = ReactDOM.findDOMNode(this);
-		d3.select(node).call(this.props.axis);
+		d3.select(node)
+			.call(this.props.axis);
 	},
 	render: function() {
 		var translate = `translate(0, ${this.props.h})`;
 		return (
 			<g
-				className="axis"
+				className={`axis axis-${this.props.axisType}`}
 				transform={this.props.axisType=='x' ? translate : ''}
 			></g>
 		);

@@ -40,6 +40,7 @@ module.exports = {
 			Tooltip: 'app/components/LineChart/Tooltip.jsx',
 			Nav: 'app/components/Nav.jsx',
 			About: 'app/components/About.jsx',
+			Footer: 'app/components/Footer.jsx',
 
 			applicationStyles: 'app/styles/app.scss',
 			normalizeCss: 'app/lib/normalize-css/normalize.css',

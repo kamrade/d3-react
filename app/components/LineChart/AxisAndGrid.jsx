@@ -20,11 +20,15 @@ var AxisAndGrid = React.createClass({
 
 		var yAxis = d3.axisLeft(y)
 			.ticks(5);
+
 		var xAxis = d3.axisBottom(x)
-			.tickValues(data.map(function(d,i){
-				if(i > 0) return d.date;
-			}).splice(1))
-			.ticks(4);
+			.ticks(d3.timeDay.every(5))
+			.tickFormat(d3.timeFormat('%b %e'));
+
+			// .tickValues(data.map(function(d,i){
+			// 	if(i > 0) return d.date;
+			// }).splice(1));
+
 		var yGrid = d3.axisLeft(y)
 			.ticks(5)
 			.tickSize(-w, 0, 0)
