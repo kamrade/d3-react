@@ -101,6 +101,7 @@ var LineChart = React.createClass({
 		var margin = this.state.margin;
 		var w = this.state.width - (margin.left + margin.right);
 		var h = this.props.height - (margin.top + margin.bottom);
+		var title = this.props.title;
 
 		var parseDate = d3.timeParse('%m-%d-%Y');
 
@@ -133,7 +134,7 @@ var LineChart = React.createClass({
 
 		return(
 			<div>
-				<h6>Line Chart</h6>
+				<h6>{title}</h6>
 				<svg
 					id={this.props.chartId}
 					width={this.state.width}

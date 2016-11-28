@@ -52,6 +52,7 @@ var Visitors = React.createClass({
 								margin={margin}
 								width={width}
 								height={height}
+								title="Title 1"
 							/>
 						</div>
 					</div>
@@ -62,6 +63,7 @@ var Visitors = React.createClass({
 								margin={margin}
 								width={width}
 								height={height}
+								title="Title 2"
 							/>
 						</div>
 					</div>
