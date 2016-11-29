@@ -29,22 +29,29 @@ module.exports = {
 	resolve: {
 		root: __dirname,
 		alias: {
-			Main: 'app/components/Main.jsx',
-			Visitors: 'app/components/Visitors.jsx',
-			LineChart: 'app/components/LineChart.jsx',
+			Main:       'app/components/Main.jsx',
+			Visitors:   'app/components/Visitors.jsx',
+			LineChart:  'app/components/LineChart.jsx',
+			DonutChart: 'app/components/DonutChart.jsx',
+			Nav:        'app/components/Nav.jsx',
+			About:      'app/components/About.jsx',
+			Footer:     'app/components/Footer.jsx',
 
-			Dots: 'app/components/LineChart/Dots.jsx',
+			// Line Chart
+			Dots:        'app/components/LineChart/Dots.jsx',
 			AxisAndGrid: 'app/components/LineChart/AxisAndGrid.jsx',
-			Axis: 'app/components/LineChart/Axis.jsx',
-			Grid: 'app/components/LineChart/Grid.jsx',
-			Tooltip: 'app/components/LineChart/Tooltip.jsx',
-			Nav: 'app/components/Nav.jsx',
-			About: 'app/components/About.jsx',
-			Footer: 'app/components/Footer.jsx',
+			Axis:        'app/components/LineChart/Axis.jsx',
+			Grid:        'app/components/LineChart/Grid.jsx',
+			Tooltip:     'app/components/LineChart/Tooltip.jsx',
+
+			// Donut Chart
+			DonutChartPath: 'app/components/DonutChart/DonutChartPath.jsx',
+			DonutChartLegend: 'app/components/DonutChart/DonutChartLegend.jsx',
 
 			applicationStyles: 'app/styles/app.scss',
 			normalizeCss: 'app/lib/normalize-css/normalize.css',
-			LineChartStyles: 'app/styles/modules/line-chart.sass'
+			LineChartStyles: 'app/styles/modules/line-chart.sass',
+			DonutChartStyles: 'app/styles/modules/donut-chart.sass'
 		},
 		extensions: ['.js', '', '.jsx']
 	},

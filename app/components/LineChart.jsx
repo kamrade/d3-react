@@ -134,7 +134,7 @@ var LineChart = React.createClass({
 
 		return(
 			<div>
-				<h6>{title}</h6>
+				<h6 className="chart-title">{title}</h6>
 				<svg
 					id={this.props.chartId}
 					width={this.state.width}

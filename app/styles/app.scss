@@ -22,3 +22,15 @@ body {
 	background-color: darken($acc, 10%);
 	color: white;
 }
+
+.graph {
+	background-color: #3f5175;
+	color: white;
+	border-radius: 16px;
+	padding: 16px;
+}
+
+.chart-in {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}

@@ -1,5 +1,6 @@
 var React = require('react');
 var LineChart = require('LineChart');
+var DonutChart = require('DonutChart');
 
 var data = [
 	{day: '02-11-2016', count: 180},
@@ -44,26 +45,36 @@ var Visitors = React.createClass({
 		return(
 			<div className="visitors container">
 				<h3>Visitors to site</h3>
+				<div className="donut-chart row">
+					<div className="col-lg-6 chart-in">
+						<div className="graph">
+							<DonutChart
+								id="bs_chart"
+								padAngle={0.03}
+							/>
+						</div>
+					</div>
+				</div>
 				<div className="line-chart row">
-					<div className="col-lg-6 line-chart-in">
+					<div className="col-lg-6 chart-in">
 						<div className="graph">
 							<LineChart
 								data={data}
 								margin={margin}
 								width={width}
 								height={height}
-								title="Title 1"
+								title="Just Visitors"
 							/>
 						</div>
 					</div>
-					<div className="col-lg-6 line-chart-in">
+					<div className="col-lg-6 chart-in">
 						<div className="graph">
 							<LineChart
 								data={data1}
 								margin={margin}
 								width={width}
 								height={height}
-								title="Title 2"
+								title="Visitors Count"
 							/>
 						</div>
 					</div>
