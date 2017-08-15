@@ -6,7 +6,7 @@ const webpack = require('webpack');
 module.exports = {
 	entry: [
 		'script!jquery/dist/jquery.min.js',
-		'script!foundation-sites/dist/foundation.min.js',
+		'script!foundation-sites/dist/js/foundation.min.js',
 		'./app/app.jsx'
 	],
 	externals: {
@@ -49,7 +49,7 @@ module.exports = {
 			DonutChartLegend: 'app/components/DonutChart/DonutChartLegend.jsx',
 
 			applicationStyles: 'app/styles/app.scss',
-			normalizeCss: 'app/lib/normalize-css/normalize.css',
+			normalizeCss: 'node_modules/normalize.css/normalize.css',
 			LineChartStyles: 'app/styles/modules/line-chart.sass',
 			DonutChartStyles: 'app/styles/modules/donut-chart.sass'
 		},
